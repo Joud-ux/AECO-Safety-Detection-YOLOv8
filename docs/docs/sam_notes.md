@@ -23,3 +23,6 @@ SAM detected the excavator but failed to detect the excavation area due to uncle
 
 Annotation 5 – Concrete and Steel Overlap (SAM + Manual Editing)
 SAM detected the concrete surface well, but manual editing was required where steel reinforcement overlapped with concrete.
+
+Annotation examples are available in :
+results/evidence/

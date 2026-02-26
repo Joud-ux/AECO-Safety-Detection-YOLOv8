@@ -39,3 +39,11 @@ Image Reference: Annotation 5.jpg
 Missed Class: Workers/People
 Condition: Complex Background
 Root Cause Hypothesis: Occlusion. The workers are partially obscured by the rebar grid and structural elements, breaking the human silhouette that the model expects to see.
+
+---
+## 🛠️ Prioritized Next Data Improvements
+Based on the failure analysis above, we prioritize the following three steps to improve model reliability for AECO site safety:
+
+1. **Hard Negative Mining for Site Terrain:** To resolve FP1, we will add 100+ images of empty trenches and dirt mounds labeled as "background" to teach the model to distinguish natural earth textures from metallic machinery.
+2. **Color Augmentation for PPE/Machinery:** To resolve FP2 (Orange Pipe confusion), we will apply "Hue" and "Saturation" augmentations in Roboflow. This helps the model differentiate between the specific "Safety Orange" of machinery and other onsite construction materials.
+3. **Mosaic & Blur Augmentation for Occlusion:** To resolve FN2 (Workers behind rebar), we will enable Mosaic 4-way training. This forces the model to identify objects using only partial features, making it more robust when workers are obscured by structural grids.

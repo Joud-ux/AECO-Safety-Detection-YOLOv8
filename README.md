@@ -10,7 +10,7 @@ Does it Work?
 "Success Metric: Define a target. (e.g., "We aim for a Mean Average Precision ($mAP@50$) of 0.75 or higher.")
 ## ✅ Reproducibility Checklist
 To reproduce these results, follow these steps in Google Colab:
-* **Dataset:** [[[Insert Roboflow Link Here](https://app.roboflow.com/shaheds-workspace/construction-activities-fmp8/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)]
+* **Dataset:** [(https://app.roboflow.com/shaheds-workspace/construction-activities-fmp8/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)]
 * **Model Variant:** YOLOv8n (Nano)
 * **Parameters:** 30 Epochs | 640 Image Size | Batch 16
 * **Environment:** `ultralytics` library installed via pip.
